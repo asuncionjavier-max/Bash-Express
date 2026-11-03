@@ -8,12 +8,16 @@
                 *Node 20.11+,
                 *Bash o WSL
 
+---
+
 ### Para inicializarlo:
 
     - git clone
     - cd <>
     - npm install
     - npm start
+
+---
 
 #### SCRIPTS
 
