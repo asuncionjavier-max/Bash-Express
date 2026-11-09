@@ -4,22 +4,25 @@
 
 ### Requisitos:
 
-                *IDE,
+                *un IDE a tu gusto,
                 *Node 20.11+,
-                *Bash o WSL
-
----
+                *Bash (o WSL en windows)
 
 ### Para inicializarlo:
+
+```bash
 
     - git clone
     - cd <>
     - npm install
     - npm start
+```
 
 ---
 
-#### SCRIPTS
+## Scripts
 
-npm run dev
-npm start
+| Comando       | Descripción                    |
+| ------------- | ------------------------------ |
+| `npm start`   | Arranca el servidor            |
+| `npm run dev` | Arranca con recarga automática |
