@@ -1,5 +1,5 @@
 import express from "express";
-import.meta.dirname;
+import scriptRoutes from "./routes.scripts.js";
 const router = express.Router();
 
 router.get("/health", (req, res) => {
@@ -8,5 +8,7 @@ router.get("/health", (req, res) => {
     message: "La ruta funciona",
   });
 });
+
+router.use(scriptRoutes);
 
 export default router;
