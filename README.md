@@ -33,3 +33,4 @@
 | ------------------ | -------------------------------------------------- |
 | /api/script/uptime | Muestra el tiempo que lleva encencendido el equipo |
 | /api/script/whoami | Identifica al usuario                              |
+| /api/scripts       | Muestra los scripts disponibles                    |
