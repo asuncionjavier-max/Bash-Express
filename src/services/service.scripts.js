@@ -5,8 +5,9 @@ import { ScriptNotFoundError } from "../errors/errors.js";
 const SCRIPTS_DIR = path.join(import.meta.dirname, "..", "..", "scripts");
 
 const SCRIPTS = {
-  uptime: path.join(SCRIPTS_DIR, "uptime"),
-  whoami: path.join(SCRIPTS_DIR, "whoami"),
+  uptime: path.join(SCRIPTS_DIR, "uptime.sh"),
+  whoami: path.join(SCRIPTS_DIR, "whoami.sh"),
+  disk: path.join(SCRIPTS_DIR, "disk.sh"),
 };
 
 export function runScript(name) {
