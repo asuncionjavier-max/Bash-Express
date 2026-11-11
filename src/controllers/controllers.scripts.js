@@ -1,5 +1,5 @@
 import { ScriptNotFoundError } from "../errors/errors.js";
-import { runScript } from "../services/service.scripts.js";
+import { listScripts, runScript } from "../services/service.scripts.js";
 
 export const getScript = async (req, res) => {
   try {
@@ -18,5 +18,19 @@ export const getScript = async (req, res) => {
         error: "internal server error",
       });
     }
+  }
+};
+
+export const showScripts = (req, res) => {
+  try {
+    const scripts = listScripts();
+    res.status(200).json({
+      scripts: scripts,
+    });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({
+      error: "internal server error",
+    });
   }
 };

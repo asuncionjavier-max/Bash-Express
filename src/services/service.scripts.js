@@ -18,3 +18,5 @@ export function runScript(name) {
     });
   });
 }
+
+export const listScripts = () => Object.keys(SCRIPTS);
